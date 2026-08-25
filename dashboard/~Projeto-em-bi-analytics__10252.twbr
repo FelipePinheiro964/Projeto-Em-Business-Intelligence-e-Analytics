@@ -264,6 +264,9 @@
       <column caption='Clubes em risco' datatype='integer' name='[Calculation_0704549852459012]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='IF FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;%&quot;, &quot;&quot;)) &gt;= 0.50 THEN 1 ELSE 0 END' />
       </column>
+      <column caption='Menor Risco' datatype='boolean' name='[Maior Risco (cópia)_0704549874339845]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[risco_rebaixamento_previsto] = { FIXED : MIN([risco_rebaixamento_previsto]) }' />
+      </column>
       <column caption='dashboard_tableu.csv' datatype='table' name='[__tableau_internal_object_id__].[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]' role='measure' type='quantitative' />
       <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
       <column caption='Derrotas' datatype='integer' name='[derrotas]' role='measure' type='quantitative' />
@@ -790,7 +793,7 @@
       </table>
       <simple-id uuid='{69BA1761-91C6-44D0-9F65-19913AFB0329}' />
     </worksheet>
-    <worksheet name='KPI2 - Maior Risco (2)'>
+    <worksheet name='KPI2 - Menor risco'>
       <layout-options>
         <title>
           <formatted-text>
@@ -807,26 +810,26 @@
             <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
             </column>
-            <column caption='Maior Risco' datatype='boolean' name='[Calculation_0704549847855107]' role='dimension' type='nominal'>
-              <calculation class='tableau' formula='[risco_rebaixamento_previsto] = { FIXED : MAX([risco_rebaixamento_previsto]) }' />
+            <column caption='Menor Risco' datatype='boolean' name='[Maior Risco (cópia)_0704549874339845]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[risco_rebaixamento_previsto] = { FIXED : MIN([risco_rebaixamento_previsto]) }' />
             </column>
             <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
-            <column-instance column='[Calculation_0704549847855107]' derivation='None' name='[none:Calculation_0704549847855107:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maior Risco (cópia)_0704549874339845]' derivation='None' name='[none:Maior Risco (cópia)_0704549874339845:nk]' pivot='key' type='nominal' />
             <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
             <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_0704549816692736]' derivation='Sum' name='[sum:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549847855107:nk]'>
-            <groupfilter function='member' level='[none:Calculation_0704549847855107:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          <filter class='categorical' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Maior Risco (cópia)_0704549874339845:nk]'>
+            <groupfilter function='member' level='[none:Maior Risco (cópia)_0704549874339845:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
-            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549847855107:nk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Maior Risco (cópia)_0704549874339845:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='cell'>
-            <format attr='width' value='292' />
+            <format attr='width' value='355' />
             <format attr='height' value='183' />
           </style-rule>
         </style>
@@ -937,6 +940,61 @@
         <cols>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]</cols>
       </table>
       <simple-id uuid='{370F4F71-DBA9-4CE2-9DF9-AB50637220AB}' />
+    </worksheet>
+    <worksheet name='Planilha 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_tableu' name='federated.1m6dn8r1t8kie519q84hh16kgb27' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m6dn8r1t8kie519q84hh16kgb27'>
+            <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column-instance column='[Calculation_0704549816692736]' derivation='Avg' name='[avg:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+            <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
+            <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+            <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]' included-values='non-null' />
+          <filter class='categorical' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Ceara&quot;' />
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Fortaleza&quot;' />
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Internacional&quot;' />
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Juventude&quot;' />
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Sport&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' included-values='in-range'>
+            <min>2014</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]</rows>
+        <cols>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</cols>
+      </table>
+      <simple-id uuid='{4E99A14A-D33A-4333-8AA2-BBDF02941F22}' />
     </worksheet>
   </worksheets>
   <dashboards>
@@ -1112,7 +1170,7 @@
       </cards>
       <simple-id uuid='{C89A5A8C-77A7-4E34-97B5-81CA422D14AF}' />
     </window>
-    <window class='worksheet' maximized='true' name='KPI2 - Maior Risco (2)'>
+    <window class='worksheet' name='KPI2 - Menor risco'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1157,6 +1215,34 @@
         </edge>
       </cards>
       <simple-id uuid='{24874E0D-DE88-4A17-9DE3-878447CB2506}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Planilha 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{211640D0-3EC4-4543-8290-69716C54C73E}' />
     </window>
     <window class='dashboard' name='História 1'>
       <viewpoints />
