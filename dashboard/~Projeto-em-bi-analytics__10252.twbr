@@ -953,12 +953,16 @@
             </column>
             <column-instance column='[Calculation_0704549816692736]' derivation='Avg' name='[avg:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
             <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549816692736]' derivation='None' name='[none:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
             <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
             <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
             <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
             <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
           </datasource-dependencies>
-          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549816692736:qk]' included-values='in-range'>
+            <min>0.73120017450613528</min>
+            <max>0.83488298645459358</max>
+          </filter>
           <filter class='categorical' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]'>
             <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
               <groupfilter function='member' level='[none:clube:nk]' member='&quot;Ceara&quot;' />
@@ -969,13 +973,13 @@
             </groupfilter>
           </filter>
           <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' included-values='in-range'>
-            <min>2014</min>
+            <min>2010</min>
             <max>2025</max>
           </filter>
           <slices>
             <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549816692736:qk]</column>
             <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
-            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -985,7 +989,7 @@
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Automatic' />
+            <mark class='Line' />
             <encodings>
               <color column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' />
             </encodings>
@@ -1049,8 +1053,18 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97714' id='3' param='vert' type-v2='layout-flow' w='95734' x='2133' y='1143' />
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98214' id='7' param='vert' type-v2='layout-flow' w='99078' x='461' y='893'>
+                <zone fixed-size='280' h='98214' id='5' is-fixed='true' name='KPI3 - Clubes em zona de risco' w='99078' x='461' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
