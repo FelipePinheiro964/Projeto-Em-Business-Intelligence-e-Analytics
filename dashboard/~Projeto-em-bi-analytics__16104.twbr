@@ -5,6 +5,10 @@
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
+    <DashboardGridOverlay />
+    <DashboardGridSize />
+    <DashboardMttwImageObject />
+    <IndividualControlFormatting />
     <IntuitiveSorting />
     <IntuitiveSorting_SP2 />
     <MarkAnimation />
@@ -808,7 +812,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Risco de rebaixamento por clube</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT'>Risco de rebaixamento por clube</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1027,6 +1031,9 @@
             <format attr='line-visibility' value='on' />
             <format attr='line-pattern-only' value='solid' />
             <format attr='tick-color' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
           </style-rule>
           <style-rule element='cell'>
             <format attr='width' value='1300' />
@@ -1041,8 +1048,11 @@
             <format attr='band-color' scope='rows' value='#1a1a1a' />
             <format attr='background-color' value='#1a1a1a' />
             <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='solid' />
             <format attr='font-size' data-class='subtotal' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' value='12' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
           </style-rule>
           <style-rule element='label'>
             <format attr='font-size' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' value='12' />
@@ -1052,8 +1062,8 @@
             <format attr='band-color' scope='rows' value='#1a1a1a' />
             <format attr='background-color' value='#1a1a1a' />
             <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='solid' />
-            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
             <format attr='border-style' data-class='subtotal' value='none' />
           </style-rule>
           <style-rule element='table'>
@@ -1070,26 +1080,46 @@
             <format attr='border-color' value='#000000' />
             <format attr='border-style' value='solid' />
           </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
           <style-rule element='gridline'>
             <format attr='stroke-color' value='#000000' />
             <format attr='line-visibility' value='on' />
             <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
           <style-rule element='zeroline'>
             <format attr='stroke-color' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
           </style-rule>
           <style-rule element='table-div'>
             <format attr='stroke-color' scope='rows' value='#000000' />
-            <format attr='line-visibility' scope='rows' value='on' />
             <format attr='line-pattern-only' scope='rows' value='solid' />
             <format attr='stroke-color' scope='cols' value='#000000' />
-            <format attr='line-visibility' scope='cols' value='on' />
             <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
           </style-rule>
           <style-rule element='title'>
             <format attr='background-color' value='#000000' />
             <format attr='border-color' value='#000000' />
             <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+            <format attr='background-color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' id='legend-color' value='#000000' />
+            <format attr='border-style' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' id='legend-color' value='solid' />
+            <format attr='border-color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' id='legend-color' value='#000000' />
           </style-rule>
         </style>
         <panes>
@@ -1137,7 +1167,6 @@
         <title>
           <formatted-text>
             <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT' fontsize='18'>Média de risco</run>
-            <run fontalignment='1'>Æ&#10;</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1446,8 +1475,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run fontalignment='1'>Clubes em risco</run>
-            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT'>Clubes em risco (%)</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1533,6 +1561,9 @@
             <format attr='line-visibility' scope='cols' value='on' />
             <format attr='line-pattern-only' scope='cols' value='solid' />
           </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
         </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
@@ -1573,9 +1604,9 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;</run>
-            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Sheet Name</run>
-            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&gt;</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT'>&lt;</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT'>&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1687,6 +1718,16 @@
           <style-rule element='title'>
             <format attr='background-color' value='#000000' />
           </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' id='legend-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' value='Gráficos de risco'>
+              <formatted-text>
+                <run>Gráficos de risco</run>
+              </formatted-text>
+            </format>
+          </style-rule>
         </style>
         <panes>
           <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
@@ -1764,13 +1805,21 @@
       <size sizing-mode='automatic' />
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='97990' id='26' param='vert' type-v2='layout-flow' w='98946' x='527' y='1005'>
-            <zone h='97990' id='24' type-v2='layout-basic' w='98946' x='527' y='1005'>
-              <zone fixed-size='1441' h='97990' id='12' is-fixed='true' type-v2='layout-basic' w='90377' x='527' y='1005'>
-                <zone h='21874' id='6' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='57347' x='527' y='1005'>
-                  <zone h='21875' id='20' param='vert' type-v2='layout-flow' w='19134' x='527' y='1004'>
-                    <zone h='21875' id='21' name='Faixa de risco de rebaixamento para clubes da Seria A' w='19134' x='527' y='1004'>
-                      <layout-cache cell-count-h='1' non-cell-size-h='42' type-h='cell' type-w='fixed' />
+          <zone h='85053' id='26' param='vert' type-v2='layout-flow' w='98946' x='527' y='13942'>
+            <zone h='85053' id='24' type-v2='layout-basic' w='98946' x='527' y='13942'>
+              <zone fixed-size='1441' h='85053' id='12' is-fixed='true' type-v2='layout-basic' w='98946' x='527' y='13942'>
+                <zone h='18972' id='6' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='75278' x='527' y='13942'>
+                  <zone h='18973' id='20' param='horz' type-v2='layout-flow' w='25102' x='527' y='13951'>
+                    <zone fixed-size='93' h='18973' id='22' is-fixed='true' name='Faixa de risco de rebaixamento para clubes da Seria A' pane-specification-id='0' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' type-v2='color' w='5910' x='527' y='13951'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='18973' id='21' name='Faixa de risco de rebaixamento para clubes da Seria A' w='19192' x='6437' y='13951'>
+                      <layout-cache cell-count-h='1' non-cell-size-h='42' type-h='cell' type-w='cell' />
                       <zone-style>
                         <format attr='border-color' value='#000000' />
                         <format attr='border-style' value='none' />
@@ -1779,7 +1828,7 @@
                       </zone-style>
                     </zone>
                   </zone>
-                  <zone h='21875' id='7' name='KPI - Media de risco' w='19134' x='19661' y='1004'>
+                  <zone h='18973' id='7' name='KPI - Media de risco' w='25102' x='25629' y='13951'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1787,7 +1836,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='21875' id='8' name='KPI2 - Maior Risco' w='19075' x='38795' y='1004'>
+                  <zone h='18973' id='8' name='KPI2 - Maior Risco' w='25103' x='50731' y='13951'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1796,7 +1845,7 @@
                     </zone-style>
                   </zone>
                 </zone>
-                <zone h='21874' id='9' name='KPI3 - Menor risco' w='33030' x='57874' y='1005'>
+                <zone h='18972' id='9' name='KPI3 - Menor risco' w='23668' x='75805' y='13942'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1804,8 +1853,8 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='61712' id='10' param='horz' type-v2='layout-flow' w='69892' x='21012' y='37283'>
-                  <zone h='61712' id='11' name='Risco de rebaixamento ao longo das temporadas (2014 -2025)' w='69892' x='21012' y='37283'>
+                <zone h='53576' id='10' param='horz' type-v2='layout-flow' w='77413' x='22060' y='45419'>
+                  <zone fixed-size='1188' h='53576' id='11' is-fixed='true' name='Risco de rebaixamento ao longo das temporadas (2014 -2025)' w='69982' x='22060' y='45419'>
                     <layout-cache minwidth='206' type-h='fixed' type-w='scalable' />
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -1814,8 +1863,18 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
+                  <zone h='53576' id='31' param='vert' type-v2='layout-flow' w='7431' x='92042' y='45419'>
+                    <zone fixed-size='440' h='50000' id='15' is-fixed='true' name='Risco de rebaixamento ao longo das temporadas (2014 -2025)' pane-specification-id='2' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' single-line='false' type-v2='color' w='7431' x='92042' y='45419'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
                 </zone>
-                <zone h='61712' id='16' name='Barras_risco_rebaixamento%' w='20485' x='527' y='37283'>
+                <zone h='53576' id='16' name='Barras_risco_rebaixamento%' w='21533' x='527' y='45419'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1823,9 +1882,9 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='14404' id='18' param='horz' type-v2='layout-flow' w='90377' x='527' y='22879'>
-                  <zone h='14404' id='19' name='KPI4 - Clubes em zona de risco' show-title='false' w='90377' x='527' y='22879'>
-                    <layout-cache cell-count-w='4' type-h='cell' type-w='cell' />
+                <zone h='12505' id='18' param='horz' type-v2='layout-flow' w='98946' x='527' y='32914'>
+                  <zone h='12505' id='19' name='KPI4 - Clubes em zona de risco' w='98946' x='527' y='32914'>
+                    <layout-cache cell-count-w='4' non-cell-size-w='1' type-h='cell' type-w='cell' />
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1835,38 +1894,38 @@
                   </zone>
                 </zone>
               </zone>
-              <zone fixed-size='103' h='97990' id='13' is-fixed='true' param='vert' type-v2='layout-flow' w='8569' x='90904' y='1005'>
-                <zone h='7255' id='15' name='Risco de rebaixamento ao longo das temporadas (2014 -2025)' pane-specification-id='2' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' type-v2='color' w='8451' x='90963' y='1117'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone h='7255' id='17' name='Barras_risco_rebaixamento%' pane-specification-id='1' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' type-v2='color' w='8451' x='90963' y='8372'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone h='11831' id='22' name='Faixa de risco de rebaixamento para clubes da Seria A' pane-specification-id='0' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' type-v2='color' w='8451' x='90963' y='15627'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='solid' />
-                  <format attr='border-width' value='1' />
-                  <format attr='background-color' value='#1a1a1a' />
-                </zone-style>
-              </zone>
+            </zone>
+          </zone>
+          <zone h='12937' id='27' param='horz' type-v2='layout-flow' w='98946' x='527' y='1005'>
+            <zone fixed-size='355' forceUpdate='true' h='12937' id='29' is-fixed='true' is-scaled='1' param='C:/Users/felfe/Downloads/campeonato-brasileiro-serie-a-logo-png_seeklogo-384072.png' type-v2='bitmap' url='https://www.google.com/search?sca_esv=7bf78debd29e0bdd&amp;sxsrf=APpeQnur-v5dv0fAGvK78-_5Hq5zxXFtsQ:1787771812838&amp;q=classifica%C3%A7%C3%B5es+de+brasileir%C3%A3o+s%C3%A9rie+a&amp;si=APenkKkQ_vdbVGEJSTEGpyiUmgDLn5uGsZD_GMQaaVEqqP3bn49BC-0XwdEg1It9NExlX6vhIH8-0FVOwDtdC51dKUh8TeNipTFijHV6QdKas3QJbU5fG_VSD68drnWq5Z6UdxXk6lfZlOouG85ym59McbRIc_RIhkPRW1Vm9UdvXhMTs3QLLQQSWkcrC-ym1Kql2Kic_L3d17uBKOiARcW0VzPvqzi_gIAK4cXMNR1WkhLA9NnnHzoNRougl_XThnP8MHCBy8OFVz_7WeDQFx9olt9FvWkKNfIuTNPAKw9hVooVxUDvyY8_BSQuomkEoXlyi7RBtbp3jUYyVzToroYOhyE5zyRmIZczlIrttHthXcwTRQAlaw8%3D&amp;sa=X&amp;sqi=2&amp;ved=2ahUKEwiJyd_-gL-WAxUwrZUCHUmlB9oQyNoBKAB6BAgbEAA&amp;ictx=1&amp;biw=1920&amp;bih=911&amp;dpr=1' w='21240' x='527' y='1005'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='1139' forceUpdate='true' h='12937' id='28' is-fixed='true' type-v2='text' w='67115' x='21767' y='1005'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Copperplate Gothic Bold' fontsize='24'>PREVISÃO DE REBAIXAMENTO DO </run>
+                <run bold='true' fontalignment='1' fontcolor='#59a14f' fontname='Copperplate Gothic Bold' fontsize='24'>CAMPEONATO BRASILEIRO</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#ff0000' fontname='Copperplate Gothic Bold' fontsize='36'>2025</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone alt-text='Acesso ao repositorio do github' forceUpdate='true' h='12937' id='30' is-scaled='1' param='C:/Users/felfe/Downloads/github.png' type-v2='bitmap' url='https://github.com/FelipePinheiro964/Projeto-Em-Business-Intelligence-e-Analytics' w='10591' x='88882' y='1005'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
             </zone>
           </zone>
           <zone-style>
@@ -1881,7 +1940,7 @@
       <simple-id uuid='{D0657407-40BB-4254-BB59-CB84F511F9A2}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows pres-mode='true' source-height='30'>
     <window class='worksheet' name='Barras_risco_rebaixamento%'>
       <cards>
         <edge name='left'>
@@ -2082,12 +2141,13 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='21' />
+      <active id='31' />
+      <grid grid-size='100' />
       <simple-id uuid='{985E7118-BD62-4F2F-AE4C-9098F928DFD5}' />
     </window>
     <window class='dashboard' name='História 1'>
       <viewpoints />
-      <active id='5' />
+      <active id='-1' />
       <simple-id uuid='{0355E64A-12A5-43E5-B7B2-54368245F375}' />
     </window>
   </windows>
