@@ -1,0 +1,2094 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...creator-author-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <ParameterAction />
+    <ParameterActionClearSelection />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='Rebaixamento' type='ordered-diverging'>
+      <color>#00ff00</color>
+      <color>#c0c0c0</color>
+      <color>#ff0004</color>
+    </color-palette>
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='ColorCenter' datatype='real' name='[ColorCenter]' param-domain-type='any' role='measure' type='quantitative' value='0.73120017450613528'>
+        <calculation class='tableau' formula='0.73120017450613528' />
+      </column>
+    </datasource>
+    <datasource caption='dashboard_tableu' inline='true' name='federated.1m6dn8r1t8kie519q84hh16kgb27' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dashboard_tableu' name='textscan.1cv4r040yw0i1n1a78dcc0dqmkmh'>
+            <connection class='textscan' directory='C:/Users/felfe/Desktop/Projeto Em Business Intelligence e Analytics/clone github/Projeto-Em-Business-Intelligence-e-Analytics/data/processed' filename='dashboard_tableu.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1cv4r040yw0i1n1a78dcc0dqmkmh' name='dashboard_tableu.csv' table='[dashboard_tableu#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR'>
+            <column datatype='integer' name='temporada' ordinal='0' />
+            <column datatype='string' name='clube' ordinal='1' />
+            <column datatype='integer' name='jogos' ordinal='2' />
+            <column datatype='integer' name='vitorias' ordinal='3' />
+            <column datatype='integer' name='empates' ordinal='4' />
+            <column datatype='integer' name='derrotas' ordinal='5' />
+            <column datatype='integer' name='gols_pro' ordinal='6' />
+            <column datatype='integer' name='gols_contra' ordinal='7' />
+            <column datatype='integer' name='pontos' ordinal='8' />
+            <column datatype='integer' name='saldo_gols' ordinal='9' />
+            <column datatype='integer' name='posicao' ordinal='10' />
+            <column datatype='string' name='rebaixado_prox_temporada' ordinal='11' />
+            <column datatype='string' name='risco_rebaixamento_previsto' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temporada</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[temporada]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>temporada</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clube</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clube]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>clube</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jogos</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jogos]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>jogos</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vitorias</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vitorias]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>vitorias</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>empates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[empates]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>empates</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>derrotas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[derrotas]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>derrotas</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gols_pro</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gols_pro]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>gols_pro</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gols_contra</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gols_contra]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>gols_contra</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pontos</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pontos]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>pontos</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saldo_gols</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[saldo_gols]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>saldo_gols</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>posicao</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[posicao]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>posicao</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rebaixado_prox_temporada</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rebaixado_prox_temporada]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>rebaixado_prox_temporada</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>risco_rebaixamento_previsto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[risco_rebaixamento_previsto]</local-name>
+            <parent-name>[dashboard_tableu.csv]</parent-name>
+            <remote-alias>risco_rebaixamento_previsto</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+      </column>
+      <column caption='Faixa de Risco' datatype='string' name='[Calculation_0704549842976769]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_0704549816692736] &gt;= 0.60 THEN&#13;&#10;    &quot;Muito alto&quot;&#13;&#10;ELSEIF [Calculation_0704549816692736] &gt;= 0.50 THEN&#13;&#10;    &quot;Alto&quot;&#13;&#10;ELSEIF [Calculation_0704549816692736] &gt;= 0.30 THEN&#13;&#10;    &quot;Médio&quot;&#13;&#10;ELSE&#13;&#10;    &quot;Baixo&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Maior Risco' datatype='boolean' name='[Calculation_0704549847855107]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[risco_rebaixamento_previsto] = { FIXED : MAX([risco_rebaixamento_previsto]) }' />
+      </column>
+      <column caption='Clubes em risco' datatype='integer' name='[Calculation_0704549852459012]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;%&quot;, &quot;&quot;)) &gt;= 0.50 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Menor Risco' datatype='boolean' name='[Maior Risco (cópia)_0704549874339845]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[risco_rebaixamento_previsto] = { FIXED : MIN([risco_rebaixamento_previsto]) }' />
+      </column>
+      <column caption='dashboard_tableu.csv' datatype='table' name='[__tableau_internal_object_id__].[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]' role='measure' type='quantitative' />
+      <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+      <column caption='Derrotas' datatype='integer' name='[derrotas]' role='measure' type='quantitative' />
+      <column caption='Empates' datatype='integer' name='[empates]' role='measure' type='quantitative' />
+      <column caption='Gols Contra' datatype='integer' name='[gols_contra]' role='measure' type='quantitative' />
+      <column caption='Gols Pro' datatype='integer' name='[gols_pro]' role='measure' type='quantitative' />
+      <column caption='Jogos' datatype='integer' name='[jogos]' role='measure' type='quantitative' />
+      <column caption='Pontos' datatype='integer' name='[pontos]' role='measure' type='quantitative' />
+      <column caption='Posicao' datatype='integer' name='[posicao]' role='measure' type='quantitative' />
+      <column aggregation='CountD' caption='Rebaixado Prox Temporada' datatype='string' default-role='measure' default-type='quantitative' name='[rebaixado_prox_temporada]' role='dimension' type='nominal' />
+      <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+      <column caption='Saldo Gols' datatype='integer' name='[saldo_gols]' role='measure' type='quantitative' />
+      <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+      <column caption='Vitorias' datatype='integer' name='[vitorias]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_0704549842976769]' derivation='None' name='[none:Calculation_0704549842976769:nk]' pivot='key' type='nominal' />
+      <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='pt_BR' class='hyper' dbname='C:/Users/felfe/AppData/Local/Temp/TableauTemp/#TableauTemp_17dc50d0aky4f11ft08z40ar74b1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/25/2026 08:25:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>temporada</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[temporada]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>temporada</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clube</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[clube]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clube</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>jogos</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[jogos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>jogos</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vitorias</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vitorias]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vitorias</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>empates</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[empates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>empates</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>derrotas</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[derrotas]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>derrotas</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gols_pro</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gols_pro]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gols_pro</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gols_contra</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gols_contra]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gols_contra</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pontos</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pontos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pontos</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>saldo_gols</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[saldo_gols]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>saldo_gols</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>posicao</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[posicao]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>posicao</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rebaixado_prox_temporada</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rebaixado_prox_temporada]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rebaixado_prox_temporada</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>risco_rebaixamento_previsto</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[risco_rebaixamento_previsto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>risco_rebaixamento_previsto</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dashboard_tableu.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <object-id>[dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_0704549842976769:nk]' type='palette'>
+            <map to='#8ace7e'>
+              <bucket>&quot;Baixo&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>&quot;Muito alto&quot;</bucket>
+            </map>
+            <map to='#e39802'>
+              <bucket>&quot;Alto&quot;</bucket>
+            </map>
+            <map to='#ffda66'>
+              <bucket>&quot;Médio&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:clube:nk]' type='palette'>
+            <map to='#000000'>
+              <bucket>&quot;Botafogo-RJ&quot;</bucket>
+            </map>
+            <map to='#0000ff'>
+              <bucket>&quot;Gremio&quot;</bucket>
+            </map>
+            <map to='#005500'>
+              <bucket>&quot;Ceara&quot;</bucket>
+            </map>
+            <map to='#09b706'>
+              <bucket>&quot;Juventude&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Avai&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Joinville&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fluminense&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sao Paulo&quot;</bucket>
+            </map>
+            <map to='#5499a7'>
+              <bucket>&quot;Fortaleza&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Chapecoense&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gremio Prudente&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Palmeiras&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bahia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Santos&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Athletico-PR&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Guarani&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;Vasco&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cruzeiro&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Figueirense&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;America-MG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Santa Cruz&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Coritiba&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;CSA&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Atletico-GO&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Santo Andre&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bragantino&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Parana&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ponte Preta&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Criciuma&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cuiaba&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Flamengo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sao Caetano&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Internacional&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mirassol&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Atletico-MG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ipatinga&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Goias&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Corinthians&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Portuguesa&quot;</bucket>
+            </map>
+            <map to='#ff6600'>
+              <bucket>&quot;Sport&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Barueri&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nautico&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;America-RN&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vitoria&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:clube:nk]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Ceara&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Cruzeiro&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Fluminense&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Mirassol&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Sao Paulo&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Atletico-MG&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Bragantino&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Flamengo&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Santos&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Sao Caetano&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Coritiba&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Gremio&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Juventude&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Parana&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Vitoria&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;America-RN&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Bahia&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;CSA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Santa Cruz&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Corinthians&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Goias&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Internacional&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Palmeiras&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Vasco&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Chapecoense&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Fortaleza&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Ipatinga&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Nautico&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Athletico-PR&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Barueri&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Cuiaba&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Santo Andre&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Atletico-GO&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Botafogo-RJ&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Figueirense&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Joinville&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;America-MG&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Avai&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Guarani&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Portuguesa&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Criciuma&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Gremio Prudente&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Ponte Preta&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Sport&quot;</bucket>
+            </map-pri>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='dashboard_tableu.csv' id='dashboard_tableu.csv_3BC27DF65DA842CD973F3AEF9CB66402'>
+            <properties context=''>
+              <relation connection='textscan.1cv4r040yw0i1n1a78dcc0dqmkmh' name='dashboard_tableu.csv' table='[dashboard_tableu#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pt_BR'>
+                  <column datatype='integer' name='temporada' ordinal='0' />
+                  <column datatype='string' name='clube' ordinal='1' />
+                  <column datatype='integer' name='jogos' ordinal='2' />
+                  <column datatype='integer' name='vitorias' ordinal='3' />
+                  <column datatype='integer' name='empates' ordinal='4' />
+                  <column datatype='integer' name='derrotas' ordinal='5' />
+                  <column datatype='integer' name='gols_pro' ordinal='6' />
+                  <column datatype='integer' name='gols_contra' ordinal='7' />
+                  <column datatype='integer' name='pontos' ordinal='8' />
+                  <column datatype='integer' name='saldo_gols' ordinal='9' />
+                  <column datatype='integer' name='posicao' ordinal='10' />
+                  <column datatype='string' name='rebaixado_prox_temporada' ordinal='11' />
+                  <column datatype='string' name='risco_rebaixamento_previsto' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <edit-parameter-action caption='ParameterColorCenter1' name='[Action1_F7BE4114A847474BA0EC1AF3C8754E7C]'>
+      <activation type='on-select' />
+      <source type='sheet' worksheet='Risco de rebaixamento ao longo das temporadas (2014 -2025)' />
+      <agg-type type='median' />
+      <clear-option type='do-nothing' value='i:1' />
+      <params>
+        <param name='source-field' value='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' />
+        <param name='target-parameter' value='[Parameters].[ColorCenter]' />
+      </params>
+    </edit-parameter-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Barras_risco_rebaixamento%'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Risco de rebaixamento por clube</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_tableu' name='federated.1m6dn8r1t8kie519q84hh16kgb27' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m6dn8r1t8kie519q84hh16kgb27'>
+            <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+            <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
+            <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549816692736]' derivation='Sum' name='[sum:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' filter-group='3' included-values='in-range'>
+            <min>2025</min>
+            <max>2025</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' value='#ff0000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' value='30' />
+            <format attr='font-weight' data-class='total' value='bold' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' value='#ffffff' />
+            <format attr='color' data-class='subtotal' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='band-color' scope='cols' value='#555555' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' data-class='total' value='#000000' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='background-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='color' value='#ffffff' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='rows' value='#000000' />
+            <format attr='background-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' value='bold' />
+            <format attr='color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' value='#ffffff' />
+            <format attr='color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' num-steps='50' palette='Rebaixamento' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='background-color' data-class='total' value='#000000' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1a1a1a' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='cols' value='#555555' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='font-weight' value='bold' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' />
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2193922996520996' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='850' />
+                <format attr='maxwidth' value='850' />
+                <format attr='minheight' value='400' />
+                <format attr='maxheight' value='400' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='468' />
+                <format attr='maxwidth' value='468' />
+                <format attr='minheight' value='400' />
+                <format attr='maxheight' value='400' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]</rows>
+        <cols>[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]</cols>
+      </table>
+      <simple-id uuid='{FC43F14A-09FB-49C8-ACCA-943F9467A7D9}' />
+    </worksheet>
+    <worksheet name='Faixa de risco de rebaixamento para clubes da Seria A'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT' fontsize='18'>Divisão do risco de clubes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_tableu' name='federated.1m6dn8r1t8kie519q84hh16kgb27' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m6dn8r1t8kie519q84hh16kgb27'>
+            <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column caption='Faixa de Risco' datatype='string' name='[Calculation_0704549842976769]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_0704549816692736] &gt;= 0.60 THEN&#13;&#10;    &quot;Muito alto&quot;&#13;&#10;ELSEIF [Calculation_0704549816692736] &gt;= 0.50 THEN&#13;&#10;    &quot;Alto&quot;&#13;&#10;ELSEIF [Calculation_0704549816692736] &gt;= 0.30 THEN&#13;&#10;    &quot;Médio&quot;&#13;&#10;ELSE&#13;&#10;    &quot;Baixo&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+            <column-instance column='[clube]' derivation='CountD' name='[ctd:clube:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0704549842976769]' derivation='None' name='[none:Calculation_0704549842976769:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
+            <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549816692736]' derivation='Sum' name='[sum:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Baixo&quot;</bucket>
+              <bucket>&quot;Médio&quot;</bucket>
+              <bucket>&quot;Alto&quot;</bucket>
+              <bucket>&quot;Muito alto&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' filter-group='3' included-values='in-range'>
+            <min>2025</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='1300' />
+            <format attr='height' value='495' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-size' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' value='12' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='cols' value='#1a1a1a' />
+            <format attr='band-color' scope='rows' value='#1a1a1a' />
+            <format attr='background-color' value='#1a1a1a' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='font-size' data-class='subtotal' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' value='12' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#1a1a1a' />
+            <format attr='band-color' scope='rows' value='#1a1a1a' />
+            <format attr='background-color' value='#1a1a1a' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#1a1a1a' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' />
+              <wedge-size column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' />
+              <size column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[ctd:clube:qk]' />
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4C3A628D-9B34-4B52-847B-0EEF9F7AC834}' />
+    </worksheet>
+    <worksheet name='KPI - Media de risco'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT' fontsize='18'>Média de risco</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_tableu' name='federated.1m6dn8r1t8kie519q84hh16kgb27' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m6dn8r1t8kie519q84hh16kgb27'>
+            <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column-instance column='[Calculation_0704549816692736]' derivation='Median' name='[med:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
+            <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+            <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' filter-group='3' included-values='in-range'>
+            <min>2025</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='1522' />
+            <format attr='height' value='96' />
+            <format attr='text-align' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[med:Calculation_0704549816692736:qk]' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1a1a1a' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[med:Calculation_0704549816692736:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1m6dn8r1t8kie519q84hh16kgb27].[med:Calculation_0704549816692736:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='6.5326151847839355' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AA158AB9-F112-4C6F-B957-1FEBC5732658}' />
+    </worksheet>
+    <worksheet name='KPI2 - Maior Risco'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT' fontsize='18'>Maior risco de rebaixamento</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_tableu' name='federated.1m6dn8r1t8kie519q84hh16kgb27' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m6dn8r1t8kie519q84hh16kgb27'>
+            <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column caption='Maior Risco' datatype='boolean' name='[Calculation_0704549847855107]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[risco_rebaixamento_previsto] = { FIXED : MAX([risco_rebaixamento_previsto]) }' />
+            </column>
+            <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549847855107]' derivation='None' name='[none:Calculation_0704549847855107:nk]' pivot='key' type='nominal' />
+            <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
+            <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549816692736]' derivation='Sum' name='[sum:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549847855107:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0704549847855107:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' filter-group='3' included-values='in-range'>
+            <min>2025</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549847855107:nk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='tick-color' value='#000000' />
+            <format attr='stroke-color' value='#1a1a1a' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='1533' />
+            <format attr='height' value='121' />
+            <format attr='text-align' value='center' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#1a1a1a' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#1a1a1a' />
+            <format attr='border-color' data-class='subtotal' value='#1a1a1a' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1a1a1a' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#1a1a1a' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#1a1a1a' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' />
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='4.6765055656433105' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{69BA1761-91C6-44D0-9F65-19913AFB0329}' />
+    </worksheet>
+    <worksheet name='KPI3 - Menor risco'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT' fontsize='18'>Menor risco de rebaixamento</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_tableu' name='federated.1m6dn8r1t8kie519q84hh16kgb27' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m6dn8r1t8kie519q84hh16kgb27'>
+            <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column caption='Menor Risco' datatype='boolean' name='[Maior Risco (cópia)_0704549874339845]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[risco_rebaixamento_previsto] = { FIXED : MIN([risco_rebaixamento_previsto]) }' />
+            </column>
+            <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+            <column-instance column='[Maior Risco (cópia)_0704549874339845]' derivation='None' name='[none:Maior Risco (cópia)_0704549874339845:nk]' pivot='key' type='nominal' />
+            <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
+            <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549816692736]' derivation='Sum' name='[sum:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Maior Risco (cópia)_0704549874339845:nk]'>
+            <groupfilter function='member' level='[none:Maior Risco (cópia)_0704549874339845:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' context='true' included-values='in-range'>
+            <min>2025</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Maior Risco (cópia)_0704549874339845:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='1529' />
+            <format attr='height' value='151' />
+            <format attr='text-align' value='center' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='color' data-class='subtotal' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#1a1a1a' />
+            <format attr='background-color' value='#000000' />
+            <format attr='band-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#1a1a1a' />
+            <format attr='background-color' value='#1a1a1a' />
+            <format attr='band-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' />
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='6.110161304473877' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DF0E236B-8F0A-4CF7-9CCF-F57EA9BD9357}' />
+    </worksheet>
+    <worksheet name='KPI4 - Clubes em zona de risco'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Clubes em risco</run>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_tableu' name='federated.1m6dn8r1t8kie519q84hh16kgb27' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m6dn8r1t8kie519q84hh16kgb27'>
+            <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column caption='Clubes em risco' datatype='integer' name='[Calculation_0704549852459012]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;%&quot;, &quot;&quot;)) &gt;= 0.50 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549816692736]' derivation='None' name='[none:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0704549852459012]' derivation='None' name='[none:Calculation_0704549852459012:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
+            <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549816692736]' derivation='Sum' name='[sum:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549816692736:qk]' included-values='in-range'>
+            <min>0.74760000000000004</min>
+            <max>0.83488298645459358</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549852459012:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>1</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' filter-group='3' included-values='in-range'>
+            <min>2025</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549852459012:qk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549816692736:qk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='33' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='text-align' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#1a1a1a' />
+            <format attr='band-color' scope='rows' value='#1a1a1a' />
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='15' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='18'>&lt;</run>
+                <run fontsize='18'>[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]</run>
+                <run fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]</cols>
+      </table>
+      <simple-id uuid='{370F4F71-DBA9-4CE2-9DF9-AB50637220AB}' />
+    </worksheet>
+    <worksheet name='Risco de rebaixamento ao longo das temporadas (2014 -2025)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Sheet Name</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dashboard_tableu' name='federated.1m6dn8r1t8kie519q84hh16kgb27' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m6dn8r1t8kie519q84hh16kgb27'>
+            <column caption='Risco Rebaixamento Numérico' datatype='real' default-format='p0.00%' name='[Calculation_0704549816692736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([risco_rebaixamento_previsto], &quot;,&quot;, &quot;.&quot;))' />
+            </column>
+            <column-instance column='[Calculation_0704549816692736]' derivation='Avg' name='[avg:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column caption='Clube' datatype='string' name='[clube]' role='dimension' type='nominal' />
+            <column-instance column='[clube]' derivation='None' name='[none:clube:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:qk]' pivot='key' type='quantitative' />
+            <column caption='Risco Rebaixamento Previsto' datatype='string' name='[risco_rebaixamento_previsto]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0704549816692736]' derivation='Sum' name='[sum:Calculation_0704549816692736:qk]' pivot='key' type='quantitative' />
+            <column caption='Temporada' datatype='integer' name='[temporada]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]' included-values='non-null' />
+          <filter class='categorical' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Ceara&quot;' />
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Fortaleza&quot;' />
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Internacional&quot;' />
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Juventude&quot;' />
+              <groupfilter function='member' level='[none:clube:nk]' member='&quot;Sport&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' included-values='in-range'>
+            <min>2014</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</column>
+            <column>[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]' field-type='quantitative' max='0.87848308595892666' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='tick-color' scope='cols' value='#ff0000' />
+            <format attr='stroke-color' scope='cols' value='#898989' />
+            <format attr='tick-color' scope='rows' value='#ff0000' />
+            <format attr='stroke-color' scope='rows' value='#555555' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='font-weight' data-class='subtotal' scope='rows' value='bold' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='11' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='cols' value='#1a1a1a' />
+            <format attr='background-color' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-size' scope='rows' value='11' />
+            <format attr='font-weight' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' value='bold' />
+            <format attr='color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' value='#ffffff' />
+            <format attr='font-size' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]' value='12' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' min='0.24314630800000001' palette='Rebaixamento' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#1a1a1a' />
+            <format attr='background-color' value='#1a1a1a' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' scope='cols' value='#0000004b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' value='#333333' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' />
+              <text column='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:clube:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+                <format attr='text-orientation' value='0' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m6dn8r1t8kie519q84hh16kgb27].[avg:Calculation_0704549816692736:qk]</rows>
+        <cols>[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:temporada:qk]</cols>
+      </table>
+      <simple-id uuid='{4E99A14A-D33A-4333-8AA2-BBDF02941F22}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='História 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{7F419042-B91C-4727-B1E3-BE17093A31C0}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Painel 1'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' value='left' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97990' id='26' param='vert' type-v2='layout-flow' w='98946' x='527' y='1005'>
+            <zone h='97990' id='24' type-v2='layout-basic' w='98946' x='527' y='1005'>
+              <zone fixed-size='1441' h='97990' id='12' is-fixed='true' type-v2='layout-basic' w='90377' x='527' y='1005'>
+                <zone h='21874' id='6' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='57347' x='527' y='1005'>
+                  <zone h='21875' id='20' param='vert' type-v2='layout-flow' w='19134' x='527' y='1004'>
+                    <zone h='21875' id='21' name='Faixa de risco de rebaixamento para clubes da Seria A' w='19134' x='527' y='1004'>
+                      <layout-cache cell-count-h='1' non-cell-size-h='42' type-h='cell' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='21875' id='7' name='KPI - Media de risco' w='19134' x='19661' y='1004'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='21875' id='8' name='KPI2 - Maior Risco' w='19075' x='38795' y='1004'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='21874' id='9' name='KPI3 - Menor risco' w='33030' x='57874' y='1005'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='61712' id='10' param='horz' type-v2='layout-flow' w='69892' x='21012' y='37283'>
+                  <zone h='61712' id='11' name='Risco de rebaixamento ao longo das temporadas (2014 -2025)' w='69892' x='21012' y='37283'>
+                    <layout-cache minwidth='206' type-h='fixed' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='61712' id='16' name='Barras_risco_rebaixamento%' w='20485' x='527' y='37283'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='14404' id='18' param='horz' type-v2='layout-flow' w='90377' x='527' y='22879'>
+                  <zone h='14404' id='19' name='KPI4 - Clubes em zona de risco' show-title='false' w='90377' x='527' y='22879'>
+                    <layout-cache cell-count-w='4' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone fixed-size='103' h='97990' id='13' is-fixed='true' param='vert' type-v2='layout-flow' w='8569' x='90904' y='1005'>
+                <zone h='7255' id='15' name='Risco de rebaixamento ao longo das temporadas (2014 -2025)' pane-specification-id='2' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' type-v2='color' w='8451' x='90963' y='1117'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='7255' id='17' name='Barras_risco_rebaixamento%' pane-specification-id='1' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' type-v2='color' w='8451' x='90963' y='8372'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11831' id='22' name='Faixa de risco de rebaixamento para clubes da Seria A' pane-specification-id='0' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' type-v2='color' w='8451' x='90963' y='15627'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='background-color' value='#1a1a1a' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#1a1a1a' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#1a1a1a' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{D0657407-40BB-4254-BB59-CB84F511F9A2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Barras_risco_rebaixamento%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='marks' />
+            <card type='filters' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='1' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{574132F6-D0A8-4C28-9468-C2D1964129EC}' />
+    </window>
+    <window class='worksheet' name='Faixa de risco de rebaixamento para clubes da Seria A'>
+      <cards>
+        <edge name='left'>
+          <strip size='147'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[none:Calculation_0704549842976769:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B09DFD9-2DD3-4FA6-ADFD-DF7DD340F3ED}' />
+    </window>
+    <window class='worksheet' name='KPI - Media de risco'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7AAE8646-7DCB-45B2-A4F1-07FB87AA19A8}' />
+    </window>
+    <window class='worksheet' name='KPI2 - Maior Risco'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C89A5A8C-77A7-4E34-97B5-81CA422D14AF}' />
+    </window>
+    <window class='worksheet' name='KPI3 - Menor risco'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3F31A872-4EAA-44C1-A613-DB5006D5ADEF}' />
+    </window>
+    <window class='worksheet' name='KPI4 - Clubes em zona de risco'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{24874E0D-DE88-4A17-9DE3-878447CB2506}' />
+    </window>
+    <window class='worksheet' name='Risco de rebaixamento ao longo das temporadas (2014 -2025)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='2' param='[federated.1m6dn8r1t8kie519q84hh16kgb27].[sum:Calculation_0704549816692736:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{211640D0-3EC4-4543-8290-69716C54C73E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Painel 1'>
+      <viewpoints>
+        <viewpoint name='Barras_risco_rebaixamento%'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Faixa de risco de rebaixamento para clubes da Seria A'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Media de risco'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI2 - Maior Risco'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI3 - Menor risco'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI4 - Clubes em zona de risco'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Risco de rebaixamento ao longo das temporadas (2014 -2025)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='21' />
+      <simple-id uuid='{985E7118-BD62-4F2F-AE4C-9098F928DFD5}' />
+    </window>
+    <window class='dashboard' name='História 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{0355E64A-12A5-43E5-B7B2-54368245F375}' />
+    </window>
+  </windows>
+</workbook>
