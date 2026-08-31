@@ -1,2 +1,7 @@
-# Projeto-Em-Business-Intelligence-e-Analytics
-Projeto de Business Intelligence para análise e predição do risco de rebaixamento no Campeonato Brasileiro Série A.
+## Licença
+
+© 2026 Felipe Pinheiro. Todos os direitos reservados.
+
+Este projeto é disponibilizado publicamente para fins de consulta e avaliação acadêmica.
+Nenhuma permissão é concedida para copiar, modificar, distribuir ou reutilizar o código,
+documentação ou materiais deste projeto sem autorização do autor.
